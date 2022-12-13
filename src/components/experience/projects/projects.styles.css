@@ -3,11 +3,9 @@
     margin: auto 10px;
     display: flex;
     flex-direction: row;
-    border: 1px solid;
 }
 
 .projects-text-box {
-    border: 1px solid blue;
     position: relative;
 }
 
@@ -25,12 +23,14 @@
 }
 
 .projects-card-container {
-    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .projects-card {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .projects-card:hover {
@@ -45,5 +45,6 @@
 
 .projects-card h4 {
     text-align: center;
+    letter-spacing: 1px;
     padding: 15px;
 }
