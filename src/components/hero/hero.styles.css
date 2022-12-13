@@ -1,0 +1,48 @@
+.hero-container {
+    display: flex;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.hero-text-box {
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-btn-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.hero-btn {
+    width: 50%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid #FFCF99;
+    display: block;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    color: #FFF8F0;
+    transition: 0.4s ease-out;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: #FFCF99;
+    color: #111D4A;
+}
+
+.sub-hero-container {
+    letter-spacing: 1px;
+}
+
+.hero-section {
+    margin: auto 20px;
+}
+
+.hero-section span{
+    color: #FFCF99;
+}

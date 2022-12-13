@@ -5,7 +5,11 @@ import './App.css';
 
 const App = () => {
   return (
-    <Nav />
+    <div>
+      <Nav />
+      <Hero />
+    </div>
+    
   )
 }
 

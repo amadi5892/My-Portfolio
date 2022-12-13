@@ -19,3 +19,7 @@
 .nav-links-container li {
     list-style-type: none;
 }
+
+.nav-links-container li:hover {
+    border-bottom: 2px solid #FFCF99;
+}
