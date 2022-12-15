@@ -30,7 +30,7 @@ const Projects = () => {
     ]
 
   return (
-    <div className='projects-container' >
+    <div id='projects' className='projects-container' >
         <div className='projects-text-box span_1_of_2' >
             <h2>Check out my previous <span>projects</span></h2>
         </div>
