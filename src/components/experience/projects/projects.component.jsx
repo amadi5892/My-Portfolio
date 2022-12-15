@@ -34,9 +34,9 @@ const Projects = () => {
         <div className='projects-text-box span_1_of_2' >
             <h2>Check out my previous <span>projects</span></h2>
         </div>
-        <div className='projects-card-container span_1_of_2' onClick={e => window.location.href='https://frolicking-beignet-093c24.netlify.app/'}>
+        <div className='projects-card-container span_1_of_2' >
             {projs.map((proj) => (
-                <div className='projects-card span_1_of_2' >
+                <div className='projects-card span_1_of_2' onClick={e => window.location.href=`${proj.url}`}>
                     <img className='card-img' src={require('../../../assets/img/'+proj.image+'.jpg')} alt='weather app' />
                     <h4>{proj.title}</h4>
                 </div>
