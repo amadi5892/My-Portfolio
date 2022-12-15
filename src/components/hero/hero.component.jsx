@@ -15,7 +15,7 @@ const Hero = () => {
           <h2>Front End Developer</h2>
         </div>
         <div className='hero-btn-section span_1_of_2'>
-          <button className='hero-btn' >Let's get in touch!</button>
+          <button className='hero-btn' onClick={e => window.location.href='#contact'}>Let's get in touch!</button>
         </div>
       </div>
       <div className='sub-hero-container' >
