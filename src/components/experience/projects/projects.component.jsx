@@ -10,21 +10,31 @@ const Projects = () => {
     const projs = [
         {
             id: 1,
-            image: 'weather-app',
-            title: 'Weather App',
-            url: 'https://frolicking-beignet-093c24.netlify.app/'
+            image: 'ecomm-app',
+            title: 'Ecommerce Website',
+            url: 'https://lucent-kringle-f4fb84.netlify.app',
+            description: 'React.js, Node.js, Firestore DB, HTML/CSS, Nested Styled Components'
         },
         {
             id: 2,
-            image: 'expense_tracker',
-            title: 'Expense Tracker',
-            url: 'https://sprightly-lebkuchen-6f5d49.netlify.app/'
+            image: 'weather-app',
+            title: 'Weather App',
+            url: 'https://frolicking-beignet-093c24.netlify.app/',
+            description: 'JavaScript, HTML/CSS, React, Node.js, State (React)'
         },
         {
             id: 3,
+            image: 'expense_tracker',
+            title: 'Expense Tracker',
+            url: 'https://sprightly-lebkuchen-6f5d49.netlify.app/',
+            description: 'JavaScript, HTML/CSS, React, React Hooks, Context API, Node.js'
+        },
+        {
+            id: 4,
             image: 'to_do_list',
             title: 'To-Do List',
-            url: 'https://bright-parfait-27c572.netlify.app/'
+            url: 'https://bright-parfait-27c572.netlify.app/',
+            description: 'JavaScript, HTML/CSS, React, Node.js, API'
         }
         
     ]
@@ -39,6 +49,7 @@ const Projects = () => {
                 <div className='projects-card span_1_of_2' onClick={e => window.location.href=`${proj.url}`}>
                     <img className='card-img' src={require('../../../assets/img/'+proj.image+'.jpg')} alt='weather app' />
                     <h4>{proj.title}</h4>
+                    <p>{proj.description}</p>
                 </div>
             ))}
         </div>
@@ -46,4 +57,5 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;
+
